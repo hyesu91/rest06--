@@ -1,0 +1,21 @@
+{
+  "name": "rest06",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "드림아이티비즈(DreamIT Biz) IT 교육 플랫폼 — React + Supabase, 구글·카카오 로그인, 아임포트(PortOne) 결제",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8"
+  }
+}
