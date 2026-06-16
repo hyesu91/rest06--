@@ -4,6 +4,7 @@ import { TEMPLATE } from './template'
 import { signIn, signOut, getSession, onAuthChange, summarizeUser, ensureProfile } from './lib/auth'
 import { requestPayment, enrollFree } from './lib/payment'
 import { fetchDashboard, touchStreak } from './lib/dashboard'
+import ChatWidget from './ChatWidget'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 디자인 아티팩트의 로그인/결제 버튼에 실제 핸들러를 연결하기 위한 최소 패치.
@@ -528,6 +529,7 @@ export default class App extends React.Component {
       <>
         {renderTemplate(PATCHED_TEMPLATE, this.renderVals())}
         {this._renderAccountOverlay()}
+        <ChatWidget />
       </>
     )
   }
